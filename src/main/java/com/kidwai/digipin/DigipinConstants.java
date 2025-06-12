@@ -1,0 +1,54 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2025 Humaid Kidwai
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+
+package com.kidwai.digipin;
+
+/**
+ * Constants used for Digipin encoding/decoding.
+ */
+public final class DigipinConstants {
+
+    private DigipinConstants() {
+        throw new UnsupportedOperationException("Utility class");
+    }
+
+    public static final char[][] GRID = {
+            {'F','C','9','8'},
+            {'J','3','2','7'},
+            {'K','4','5','6'},
+            {'L','M','P','T'}
+    };
+
+    public static final class Bounds {
+        private Bounds() {
+            throw new UnsupportedOperationException("Utility class");
+        }
+
+        public static final double MIN_LAT = 2.5;
+        public static final double MAX_LAT = 38.5;
+        public static final double MIN_LON = 63.5;
+        public static final double MAX_LON = 99.5;
+    }
+}
