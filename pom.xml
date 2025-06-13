@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.kidwai.digipin</groupId>
+    <groupId>io.github.humaidkidwai</groupId>
     <artifactId>digipin</artifactId>
-    <version>0.1</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
 
     <name>digipin-codec</name>
@@ -17,6 +17,14 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages Releases</name>
+            <url>https://maven.pkg.github.com/humaidkidwai/Digipin-Java</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
