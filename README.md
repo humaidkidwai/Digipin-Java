@@ -1,4 +1,4 @@
-# DIGIPIN API by Department of Posts
+# DIGIPIN Java Package (Maven)
 
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
   <img src="https://dev.cept.gov.in/mydigipin/_next/image?url=%2Fmydigipin%2Fimages%2Findiapost_logo_v2.webp&w=1920&q=75" alt="India Post" width="120"/>
@@ -10,22 +10,50 @@ DIGIPIN (Digital PIN) is a 10-character alphanumeric geocode developed by the De
 
 This open-source **Java** project presents a public **.jar** package to generate and decode DIGIPINs, supporting geolocation services, postal logistics, and spatial analysis applications.
 
-
 ## 🏛️ About DIGIPIN
 
-The Department of Posts has undertaken an initiative to establish a Digital Public Infrastructure (DPI) for a standardized, geo-coded addressing system in India. DIGIPIN represents the foundation layer of this infrastructure.
+The Department of Posts, India, has published a [technical document](https://www.indiapost.gov.in/VAS/DOP_PDFFiles/DIGIPIN%20Technical%20document.pdf) detailing DIGIPIN and how it works.
 
-Developed in collaboration with IIT Hyderabad and NRSC (National Remote Sensing Centre, ISRO), DIGIPIN is an open-source national-level addressing grid that serves as a key component of India's digital address ecosystem.
 
-After extensive public consultation and expert review, the DIGIPIN Grid has been finalized to provide simplified addressing solutions for seamless delivery of public and private services, enabling "Address as a Service" (AaaS) across the country.
+## 📦 How to Use
 
-### Key Highlights
+To use this library in your Maven project:
 
-- **Uniform Referencing Framework**: Provides logical, precise location identification both offline and online
-- **GIS Integration**: Bridges the gap between physical and digital addresses
-- **Cross-Sector Support**: Enhances service delivery across emergency response, e-commerce, logistics, BFSI, and governance
-- **Policy Alignment**: Complies with the National Geospatial Policy 2022, enriching India's geospatial knowledge stack
+1. **Add the GitHub Packages repository**
+2. **Add the dependency to your `pom.xml`**
 
-DIGIPIN simplifies address management and enhances service delivery accuracy, promoting a thriving geospatial ecosystem for India's digital economy.
+### 🛠 Add to `pom.xml`
 
+```xml
+<repositories>
+  <repository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/humaidkidwai/Digipin-Java</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>io.github.humaidkidwai</groupId>
+    <artifactId>digipin</artifactId>
+    <version>0.1.0</version>
+  </dependency>
+</dependencies>
+```
+
+## 🔐 Authentication Required
+To download this package, Maven must authenticate with GitHub Packages.
+
+Add the following to your ~/.m2/settings.xml:
+```xml
+<servers>
+  <server>
+    <id>github</id>
+    <username>YOUR_GITHUB_USERNAME</username>
+    <password>YOUR_GITHUB_PAT</password>
+  </server>
+</servers>
+```
+💡 Your GitHub Personal Access Token (PAT) must include the read:packages scope.
+If using a private repository, include the repo scope as well.
 ---
